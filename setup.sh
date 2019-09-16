@@ -6,7 +6,7 @@
 
 
 
-dotfiles=(".vimrc" ".bash_profile")
+dotfiles=(".bash_profile")
 server="local"
 while getopts ":hr:" opt; do
     case $opt in
@@ -20,6 +20,7 @@ while getopts ":hr:" opt; do
 
         # setup vim files
         ln -sf "$PWD/.vim" "${HOME}/.vim"
+        ln -sf "$PWD/.vimrc" "${HOME}/.vimrc"
 
       ;;
     h)
@@ -50,5 +51,6 @@ if [ $server == "local" ]; then
     done
     # setup vim files
     ln -sf "$PWD/.vim" "${HOME}/.vim"
+    ln -sf "$PWD/.vimrc" "${HOME}/.vimrc"
 fi
 
