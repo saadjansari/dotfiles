@@ -13,13 +13,14 @@ alias proj="cd ~/Documents/Projects/"
 alias nab="cd ~/Documents/Projects/newagebob/"
 
 # A: improved ls
-alias lsf="ls -ltrh"
 alias ls="ls -FGlAhp"
 
 # A: cd ..
-alias ..="cd .."
-alias ...="cd ..; cd .."
-alias ....="cd ..; cd ..; cd.."
+alias ..="cd ..;"
+alias ...="..;..;"
+alias ....="...; ..;"
+alias .....="....; ..;"
+alias ......=".....; ..;"
 
 # A: matlab non-GUI
 alias matlab="/Applications/MATLAB_R2019a.app/bin/matlab -nodesktop"
@@ -31,7 +32,7 @@ alias run_nab="spindle_bd_mp spindle_bd_mp.default.yaml spindle_bd_mp.equil.yaml
 alias run_spindle_analysis="spindle_analysis_new spindle_bd_mp.default.yaml spindle_bd_mp.equil.yaml -p spindle_bd_mp.posit --tomo 1"
 alias clean_nab="rm *posit*; rm *version*; rm *forces; rm *thermo"
 alias clean_spindle_analysis="rm *um; rm *dat"
-alias clean_SpindleAnalysis="clean_spindle_analysis; rm *mov; rm *.pickle; rm *.mat;"
+alias clean_SpindleAnalysis="clean_spindle_analysis; rm *mov; rm *.pickle; rm *.mat; rm *.pdf; rm *.png;"
 
 # A: vi = vim
 alias vi="vim"
@@ -42,28 +43,10 @@ export PATH=$PATH:/Users/saadjansari/bin
 
 # Setting PATH for Python 3.5
 # The orginal version is saved in .bash_profile.pysave
-PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}"
-export PATH
-
-export  PATH=$PATH:/Users/saadjansari/bin/saadjansari
-
-
-
-
-
-# added by Anaconda2 2.5.0 installer
-# export PATH="/Users/saadjansari/anaconda/bin:$PATH"
-
-
-# Added by Canopy installer on 2017-01-22
-# VIRTUAL_ENV_DISABLE_PROMPT can be set to '' to make the bash prompt show that Canopy is active, otherwise 1
-# alias activate_canopy="source '/Users/saadjansari/Library/Enthought/Canopy_64bit/User/bin/activate'"
-# VIRTUAL_ENV_DISABLE_PROMPT=1 source '/Users/saadjansari/Library/Enthought/Canopy_64bit/User/bin/activate'
-
-# -------------------------------------------------------------------------------------------------------
+export PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}"
+export PATH=$PATH:/Users/saadjansari/bin/saadjansari
 
 # terminal colors
-
 export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad

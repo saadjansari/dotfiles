@@ -1,8 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='/Users/saadjansari/Documents/Projects/newagebob/bin'
 let g:netrw_dirhist_2='/Users/saadjansari/Documents/Projects/newagebob/2019_02_27_1300/ref/simulations/data/afvel0.071_data'
 let g:netrw_dirhist_3='/Users/saadjansari/Documents/Projects/ImageAnalysis/Segmentation/segmentation'
 let g:netrw_dirhist_4='/Users/saadjansari/Documents/Projects/ImageAnalysis/Segmentation/import'
 let g:netrw_dirhist_5='/Users/saadjansari/Documents/Projects/ImageAnalysis/Segmentation/segmentation'
 let g:netrw_dirhist_6='/Users/saadjansari/Documents/Projects/ImageAnalysis/Segmentation/functions'
+let g:netrw_dirhist_7='/Users/saadjansari/.vim'
