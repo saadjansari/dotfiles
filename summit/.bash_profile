@@ -10,6 +10,10 @@ if [ -d $HOME/bin ] ; then
     PATH=$PATH:$HOME/bin
 fi
 
+if [[ $HOSTNAME == *"login"* ]]; then
+    ssh shas0137
+fi
+
 # ALIASES
 alias glog="git log --pretty=format:'%C(yellow)%h %Cred%an %Cblue%ad %Cgreen%d %Creset%s' --date=relative --graph"
 
