@@ -17,10 +17,10 @@ alias ls="ls -FGlAhp"
 
 # A: cd ..
 alias ..="cd ..;"
-alias ...="..;..;"
-alias ....="...; ..;"
-alias .....="....; ..;"
-alias ......=".....; ..;"
+alias ...=".. .."
+alias ....="... .."
+alias .....=".... .."
+alias ......="..... .."
 
 # A: matlab non-GUI
 alias matlab="/Applications/MATLAB_R2019a.app/bin/matlab -nodesktop"

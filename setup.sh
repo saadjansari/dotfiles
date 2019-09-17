@@ -19,7 +19,6 @@ while getopts ":hr:" opt; do
         done
 
         # setup vim files
-        ln -sf "$PWD/.vim" "${HOME}/.vim"
         ln -sf "$PWD/.vimrc" "${HOME}/.vimrc"
 
       ;;
@@ -50,7 +49,6 @@ if [ $server == "local" ]; then
         ln -sf "$PWD/${dotfile}" "${HOME}/${dotfile}"
     done
     # setup vim files
-    ln -sf "$PWD/.vim" "${HOME}/.vim"
     ln -sf "$PWD/.vimrc" "${HOME}/.vimrc"
 fi
 

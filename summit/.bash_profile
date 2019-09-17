@@ -28,10 +28,10 @@ alias ls="ls -FGlAhp"
 alias vi="vim"
 
 alias ..="cd ..;"
-alias ...="..;..;"
-alias ....="...; ..;"
-alias .....="....; ..;"
-alias ......=".....; ..;"
+alias ...=".. .."
+alias ....="... .."
+alias .....=".... .."
+alias ......="..... .."
 
 # A: newagebob: make and run, and clean
 alias make_nab="make CFG=release LOC=Summit NOGRAPH=true-j8 spindle_bd_mp"
